@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Student Green Time Questionnaire</title>
 <style>
-
-
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#e8f5e9,#f1f8e9);color:#263238}
 .container{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:18px}
@@ -55,18 +53,24 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 <label class="field-label">1. What is your present age? / आपकी वर्तमान आयु कितनी है? <span class="required">*</span></label>
-<div class="options">
 <label class="option"><input type="radio" name="age" value="10" required>10 years / 10 वर्ष</label>
 <label class="option"><input type="radio" name="age" value="11">11 years / 11 वर्ष</label>
 <label class="option"><input type="radio" name="age" value="12">12 years / 12 वर्ष</label>
 <label class="option"><input type="radio" name="age" value="13">13 years / 13 वर्ष</label>
 <label class="option"><input type="radio" name="age" value="14">14 years / 14 वर्ष</label>
 <label class="option"><input type="radio" name="age" value="15">15 years / 15 वर्ष</label>
-</div>
+</section>
+
+<section class="question">
+<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 <label class="field-label">2. In which grade do you study? / आप किस कक्षा में पढ़ते हैं? <span class="required">*</span></label>
 <label class="option"><input type="radio" name="grade" value="Class 6" required>Class 6 / कक्षा 6</label>
 <label class="option"><input type="radio" name="grade" value="Class 7">Class 7 / कक्षा 7</label>
 <label class="option"><input type="radio" name="grade" value="Class 8">Class 8 / कक्षा 8</label>
+</section>
+
+<section class="question">
+<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 <label class="field-label">3. How do you identify your gender? / आप अपने लिंग की पहचान कैसे करते हैं? <span class="required">*</span></label>
 <label class="option"><input type="radio" name="gender" value="Male" required>Male / पुरुष</label>
 <label class="option"><input type="radio" name="gender" value="Female">Female / महिला</label>
@@ -82,28 +86,37 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 <div class="day-box"><img class="question-image" src="Suburban Life.png" alt="Suburban area"><label class="option"><input type="radio" name="area" value="Suburban">Suburban / उपनगरीय क्षेत्र</label></div>
 </div>
 <div class="day-box"><img class="question-image" src="Rural Life.png" alt="Rural area"><label class="option"><input type="radio" name="area" value="Rural">Rural / ग्रामीण क्षेत्र</label></div>
+</section>
+
+<section class="question">
+<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 <label class="field-label">5. How many siblings do you have? / आपके कितने भाई-बहन हैं? <span class="required">*</span></label>
 <label class="option"><input type="radio" name="siblings" value="0" required>0</label>
 <label class="option"><input type="radio" name="siblings" value="1">1</label>
 <label class="option"><input type="radio" name="siblings" value="2">2</label>
 <label class="option"><input type="radio" name="siblings" value="3">3</label>
 <label class="option"><input type="radio" name="siblings" value="More than 3">More than 3 / 3 से अधिक</label>
+</section>
+
+<section class="question">
+<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
+<img class="question-image" src="occupation.png" alt="Different occupations" onerror="this.onerror=null;this.src='occupation.png';">
 <label class="field-label">6. What do your parents do for a living? / आपके माता-पिता क्या काम करते हैं? <span class="required">*</span></label>
 <input type="text" name="parents_occupation" required>
 </section>
 
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
-<img class="question-image" src="content monitoring.png" alt="Parents monitoring digital gadget use" onerror="this.style.display='none'">
-<p>7. Do your parents monitor what content you view and how much time you spend using digital gadgets? / क्या आपके माता-पिता इस बात पर नज़र रखते हैं कि आप डिजिटल गैजेट्स पर कौन-सी सामग्री देखते हैं और उनका उपयोग कितने समय तक करते हैं? <span class="required">*</span></p>
-<label class="option"><input type="radio" name="content_monitoring" value="Yes" required>Yes / हाँ</label>
-<label class="option"><input type="radio" name="content_monitoring" value="No">No / नहीं</label>
-<p>8. Do you have any health-related condition or are you receiving any treatment that may affect your participation in the study activities? / क्या आपको कोई ऐसी स्वास्थ्य संबंधी समस्या है या आपका कोई उपचार चल रहा है, जो इस अध्ययन की गतिविधियों में आपकी भागीदारी को प्रभावित कर सकता है? <span class="required">*</span></p>
+<p>7. Do you have any health-related condition or are you receiving any treatment that may affect your participation in the study activities? / क्या आपको कोई ऐसी स्वास्थ्य संबंधी समस्या है या आपका कोई उपचार चल रहा है, जो इस अध्ययन की गतिविधियों में आपकी भागीदारी को प्रभावित कर सकता है? <span class="required">*</span></p>
 <img class="question-image" src="health related.png" alt="Health-related condition">
 <label class="option"><input type="radio" name="health_condition" value="Yes" required>Yes / हाँ</label>
 <label class="option"><input type="radio" name="health_condition" value="No">No / नहीं</label>
 <label class="option"><input type="radio" name="health_condition" value="Prefer not to disclose">Prefer not to disclose / बताना नहीं चाहते</label>
-<p>9. To the best of your knowledge, do you currently have any of the following conditions that may affect your participation in this study? / आपकी जानकारी के अनुसार, क्या वर्तमान में आपको निम्नलिखित में से कोई ऐसी स्थिति है जो इस अध्ययन में आपकी भागीदारी को प्रभावित कर सकती है? <span class="required">*</span></p>
+</section>
+
+<section class="question">
+<h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
+<p>8. To the best of your knowledge, do you currently have any of the following conditions that may affect your participation in this study? / आपकी जानकारी के अनुसार, क्या वर्तमान में आपको निम्नलिखित में से कोई ऐसी स्थिति है जो इस अध्ययन में आपकी भागीदारी को प्रभावित कर सकती है? <span class="required">*</span></p>
 <label class="option"><input type="checkbox" name="conditions" value="ADHD">ADHD</label>
 <label class="option"><input type="checkbox" name="conditions" value="Specific learning difficulty, such as Dyslexia">Specific learning difficulty, such as Dyslexia / विशिष्ट अधिगम संबंधी कठिनाई, जैसे डिस्लेक्सिया</label>
 <label class="option"><input type="checkbox" name="conditions" value="Neurological condition">Neurological condition / तंत्रिका संबंधी स्थिति</label>
@@ -209,6 +222,7 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 
 <section class="question">
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
+<img class="question-image" src="school travel.png" alt="Travelling to and from school">
 <p>9. How do you usually go to and from school? / आप आमतौर पर स्कूल कैसे जाते और स्कूल से वापस कैसे आते हैं? <span class="required">*</span></p>
 <label class="option"><input type="radio" name="travel_mode" value="Walk all the way to school" required>I walk all the way to school / मैं पूरे रास्ते पैदल स्कूल जाता/जाती हूँ</label>
 <label class="option"><input type="radio" name="travel_mode" value="Walk at least 5 minutes to public transport">I walk at least 5 minutes to the bus, auto or rickshaw / मैं बस, ऑटो या रिक्शा तक कम से कम 5 मिनट पैदल जाता/जाती हूँ</label>
@@ -219,6 +233,7 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 
 <section class="question">
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
+<img class="question-image" src="school travel.png" alt="Time spent travelling to and from school">
 <p>10. How much time do you typically spend travelling to and from school? Enter minutes for each journey. / आप आमतौर पर स्कूल आने-जाने में कितना समय बिताते हैं? प्रत्येक यात्रा का समय मिनटों में लिखें।</p>
 <label class="field-label">Time on the way to school (minutes) / स्कूल जाते समय (मिनट) <span class="required">*</span></label>
 <input type="number" name="travel_to_school_minutes" min="0" required>
@@ -228,7 +243,8 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 
 <section class="question">
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
-<p>11. How many times do you attend physical education (PE)/games class at school each week? / आप स्कूल में हर सप्ताह शारीरिक शिक्षा (PE)/खेल की कक्षा में कितनी बार भाग लेते हैं? <span class="required">*</span></p>
+<img class="question-image" src="games class.png" alt="Physical education and games class">
+<p>11. How many times do you attend physical education (PE)/games class at school each week? / आप स्कूल में हर सप्ताह शारीरिक शिक्षा (PE)/खेल की कक्षा में कितनी बार भाग लेते हैं?</p>
 <label class="option"><input type="radio" name="pe_frequency" value="Once" required>Once / एक बार</label>
 <label class="option"><input type="radio" name="pe_frequency" value="2 times/week">2 times/week / सप्ताह में 2 बार</label>
 <label class="option"><input type="radio" name="pe_frequency" value="3 times/week">3 times/week / सप्ताह में 3 बार</label>
@@ -239,6 +255,7 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 
 <section class="question">
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
+<img class="question-image" src="outside sports.png" alt="Organized sports outside school">
 <p>12. Do you participate in any organized sports or activities outside school? / क्या आप स्कूल के बाहर किसी संगठित खेल या गतिविधि में भाग लेते हैं? <span class="required">*</span></p>
 <label class="option"><input type="radio" name="organized_sports" value="No" required>No / नहीं</label>
 <label class="option"><input type="radio" name="organized_sports" value="Yes, once a week">Yes, once a week / हाँ, सप्ताह में एक बार</label>
