@@ -13,13 +13,14 @@ h1{color:#2e7d32;text-align:center;margin:0 0 10px}h2{color:#388e3c;margin-top:1
 .subtitle{text-align:center;font-size:18px;margin-bottom:25px}.intro-text{line-height:1.7}
 .question{display:none}.question.active{display:block}
 .question-image{width:100%;max-width:760px;height:260px;object-fit:contain;display:block;margin:18px auto;border-radius:14px;border:1px solid #c8e6c9;background:#fff;padding:8px}
+.occupation-image{width:100%;max-width:1000px;height:520px;object-fit:contain;display:block;margin:18px auto;border-radius:14px;border:1px solid #c8e6c9;background:#fff;padding:8px}
 .option{display:flex;align-items:flex-start;gap:10px;padding:11px;margin:8px 0;border:1px solid #ddd;border-radius:9px;cursor:pointer;line-height:1.45}
 .option:hover{background:#f1f8e9;border-color:#81c784}.option input{width:18px;height:18px;flex-shrink:0;margin-top:2px}
 input[type=text],input[type=number],input[type=date]{width:100%;padding:12px;border:1px solid #bbb;border-radius:8px;font-size:16px}
 label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 .dual-section{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.day-box{border:1px solid #c8e6c9;border-radius:12px;padding:15px;background:#f9fff9}.day-box h3{text-align:center;margin-top:0}
 .buttons{display:flex;justify-content:space-between;gap:12px;margin-top:28px}button{border:0;border-radius:9px;padding:13px 22px;font-size:16px;cursor:pointer}.back{background:#e0e0e0}.next,.start,.submit{background:#43a047;color:#fff}.next:hover,.start:hover,.submit:hover{background:#2e7d32}.progress{height:8px;background:#e0e0e0;border-radius:10px;margin:18px 0 25px;overflow:hidden}.progress-bar{height:100%;background:#43a047;width:0%;transition:width .2s}.required{color:#c62828}.hint{font-size:14px;color:#546e7a}.success{text-align:center;padding:25px;line-height:1.7}
-@media(max-width:650px){.dual-section{grid-template-columns:1fr}.buttons button{padding:12px 14px}.question-image{height:210px}}
+@media(max-width:650px){.dual-section{grid-template-columns:1fr}.buttons button{padding:12px 14px}.question-image{height:210px}.occupation-image{height:420px}}
 </style>
 </head>
 <body>
@@ -52,6 +53,7 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
+<p class="demographic-instruction">These variables are collected to assess baseline differences in participants’ developmental characteristics, social background, and environmental conditions.<br>इन जानकारियों को प्रतिभागियों की विकासात्मक विशेषताओं, सामाजिक पृष्ठभूमि और पर्यावरणीय परिस्थितियों में आधारभूत अंतर का आकलन करने के लिए एकत्र किया जा रहा है।</p>
 <label class="field-label">1. What is your present age? / आपकी वर्तमान आयु कितनी है? <span class="required">*</span></label>
 <label class="option"><input type="radio" name="age" value="10" required>10 years / 10 वर्ष</label>
 <label class="option"><input type="radio" name="age" value="11">11 years / 11 वर्ष</label>
@@ -100,7 +102,7 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
-<img class="question-image" src="occupation.png" alt="Different occupations" onerror="this.onerror=null;this.src='occupation.png';">
+<img class="occupation-image" src="occupation.png" alt="Different occupations" onerror="this.onerror=null;this.src='occupation.png';">
 <label class="field-label">6. What do your parents do for a living? / आपके माता-पिता क्या काम करते हैं? <span class="required">*</span></label>
 <input type="text" name="parents_occupation" required>
 </section>
