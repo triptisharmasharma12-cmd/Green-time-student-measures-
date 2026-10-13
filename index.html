@@ -32,17 +32,23 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
     .sibling-image{height:420px}
     .sleep-image{height:420px}
 }
-.sleep-image{
-    width:100%;
-    max-width:420px;
-    height:100px;
-    object-fit:contain;
-    display:block;
-    margin:18px auto;
-    border-radius:14px;
-    border:1px solid #c8e6c9;
-    background:#fff;
-    padding:8px
+/* Force sleep images to a consistent size */
+img.sleep-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    height: 160px !important;
+    object-fit: contain !important;
+    margin: 12px auto !important;
+    padding: 4px !important;
+    box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+    img.sleep-image {
+        max-width: 100% !important;
+        height: 130px !important;
+    }
 }
 
 </style>
