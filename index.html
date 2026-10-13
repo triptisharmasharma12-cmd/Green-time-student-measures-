@@ -100,7 +100,7 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 <section class="question">
 <h2>Demographic Information / जनसांख्यिकीय जानकारी</h2>
 <label class="field-label">5. How many siblings do you have? / आपके कितने भाई-बहन हैं? <span class="required">*</span></label>
-<img class="sibling-image" src="images/Children.png" alt="Siblings in a family" onerror="this.onerror=null;this.src='Children.png';if(this.src.endsWith('Children.png') && this.dataset.fallback){this.style.display='none';}this.dataset.fallback='1';">
+<img class="sibling-image" src="Children.png" alt="Siblings in a family" onerror="this.onerror=null;this.src='Children.png';if(this.src.endsWith('Children.png') && this.dataset.fallback){this.style.display='none';}this.dataset.fallback='1';">
 <label class="option"><input type="radio" name="siblings" value="0" required>0</label>
 <label class="option"><input type="radio" name="siblings" value="1">1</label>
 <label class="option"><input type="radio" name="siblings" value="2">2</label>
@@ -143,12 +143,26 @@ label.field-label{display:block;font-weight:600;margin:18px 0 8px}
 <label class="option"><input type="radio" name="ses_enrolled" value="No">No / नहीं</label>
 </section>
 
+
 <section class="question">
 <h2>Green Time Measurement / ग्रीन टाइम मापन</h2>
-<img class="green-time-image" src="images/SES.png" alt="Superhumane Evolutionary Scheme" onerror="this.onerror=null;this.src='SES.png';">
-<p>2. When were you enrolled in the Superhumane Evolutionary Scheme (SES)? Mention the approximate date. / आप सुपरह्यूमन इवोल्यूशनरी स्कीम (SES) में कब नामांकित हुए थे? अनुमानित तारीख लिखें।</p>
-<label class="field-label">Approximate enrolment date / नामांकन की अनुमानित तारीख</label>
-<input type="date" name="ses_enrollment_date">
+
+<img class="green-time-image" src="images/SES.png"
+     alt="Superhumane Evolutionary Scheme"
+     onerror="this.onerror=null;this.src='SES.png';">
+
+<p>
+2. When were you enrolled in the Superhumane Evolutionary Scheme (SES)?
+Mention the approximate month and year.
+/
+आप सुपरह्यूमन इवोल्यूशनरी स्कीम (SES) में किस महीने और वर्ष में नामांकित हुए थे?
+</p>
+
+<label class="field-label">
+Approximate enrolment month and year / नामांकन का अनुमानित महीना और वर्ष
+</label>
+
+<input type="month" name="ses_enrollment_date">
 </section>
 
 <section class="question">
